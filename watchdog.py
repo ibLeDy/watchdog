@@ -4,7 +4,7 @@ import time
 
 # Open new terminal
 pyautogui.hotkey('ctrl', 'alt', 't')
-time.sleep(1)
+time.sleep(0.5)
 
 # Create tmux session
 pyautogui.write('tmux')
