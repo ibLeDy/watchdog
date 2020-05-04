@@ -1,17 +1,20 @@
 # Computer Monitoring Automation
 
-When i start the computer i always open a new terminal in my 2nd monitor occupying the right half of the screen.
+When i start the computer i always open a new terminal in my 2nd monitor occupying the lower half of the screen.
 Then i will open a new [tmux](https://github.com/tmux/tmux) session and split the
 panel horizontally.
 
 ```bash
-------------------------
-|          |..........||
-|          |..........||
-|          |----------||
-|          |..........||
-|          |..........||
-------------------------
+|          |
+|          |
+|          |
+|          |
+|          |
+|..........|
+|..........|
+|----------|
+|..........|
+|..........|
 ```
 
 I always have [nethogs](https://github.com/raboof/nethogs) in the
@@ -21,7 +24,7 @@ This scripts automates this actions using [PyAutoGUI](https://github.com/asweiga
 
 1. Open a new terminal
 2. Create tmux session
-3. Move terminal to the right monitor
+3. Move terminal to the 2nd monitor
 4. Resize terminal
 5. Split tmux horizontally
 6. Open nethogs in lower half
