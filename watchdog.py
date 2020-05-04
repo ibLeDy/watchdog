@@ -10,11 +10,11 @@ time.sleep(1)
 pyautogui.write('tmux')
 pyautogui.press('enter')
 
-# Move terminal to right monitor
-pyautogui.hotkey('winleft', 'shift', 'right')
-
-# Resize terminal
+# Move terminal to 2nd monitor and resize it
+pyautogui.hotkey('winleft', 'shift', 'left')
 pyautogui.hotkey('winleft', 'right')
+pyautogui.hotkey('winleft', 'down')
+pyautogui.hotkey('winleft', 'down')
 
 # Split tmux horizontally
 pyautogui.hotkey('ctrl', 'a')
