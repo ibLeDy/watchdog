@@ -2,8 +2,8 @@
 import subprocess
 import shlex
 
-terminal = shlex.split('alacritty --dimensions 155 64 --position 0 960')
-programs = shlex.split('--command tmux new-session htop ; split-window nethogs -s')
+terminal = shlex.split('alacritty --dimensions 135 64 --position 0 960')
+command = shlex.split('--command tmux new-session htop ; split-window nethogs -s')
 
 if __name__ == '__main__':
-    subprocess.Popen([*terminal, *programs])
+    subprocess.Popen([*terminal, *command])
